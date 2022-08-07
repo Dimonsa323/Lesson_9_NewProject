@@ -12,6 +12,15 @@
 		14B154D3289EDDB500C62C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B154D2289EDDB500C62C05 /* Assets.xcassets */; };
 		14B154D6289EDDB500C62C05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B154D4289EDDB500C62C05 /* LaunchScreen.storyboard */; };
 		14B154E5289EDED400C62C05 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154E4289EDED400C62C05 /* User.swift */; };
+		14B154EA289EE11400C62C05 /* UserIdentifaerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154E8289EE11400C62C05 /* UserIdentifaerVC.swift */; };
+		14B154EB289EE11400C62C05 /* UserIdentifaerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B154E9289EE11400C62C05 /* UserIdentifaerVC.xib */; };
+		14B154ED289EE18B00C62C05 /* UserIdentifaerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154EC289EE18B00C62C05 /* UserIdentifaerPresenter.swift */; };
+		14B154EF289EFAF700C62C05 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154EE289EFAF700C62C05 /* Film.swift */; };
+		14B154F2289EFBF800C62C05 /* FilmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154F0289EFBF800C62C05 /* FilmVC.swift */; };
+		14B154F3289EFBF800C62C05 /* FilmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B154F1289EFBF800C62C05 /* FilmVC.xib */; };
+		14B154F5289EFC0B00C62C05 /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154F4289EFC0B00C62C05 /* FilmPresenter.swift */; };
+		14B154F928A007EF00C62C05 /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154F728A007EF00C62C05 /* FilmCell.swift */; };
+		14B154FA28A007EF00C62C05 /* FilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B154F828A007EF00C62C05 /* FilmCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		14B154D5289EDDB500C62C05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14B154D7289EDDB500C62C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14B154E4289EDED400C62C05 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		14B154E8289EE11400C62C05 /* UserIdentifaerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentifaerVC.swift; sourceTree = "<group>"; };
+		14B154E9289EE11400C62C05 /* UserIdentifaerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserIdentifaerVC.xib; sourceTree = "<group>"; };
+		14B154EC289EE18B00C62C05 /* UserIdentifaerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdentifaerPresenter.swift; sourceTree = "<group>"; };
+		14B154EE289EFAF700C62C05 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		14B154F0289EFBF800C62C05 /* FilmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmVC.swift; sourceTree = "<group>"; };
+		14B154F1289EFBF800C62C05 /* FilmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmVC.xib; sourceTree = "<group>"; };
+		14B154F4289EFC0B00C62C05 /* FilmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPresenter.swift; sourceTree = "<group>"; };
+		14B154F728A007EF00C62C05 /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
+		14B154F828A007EF00C62C05 /* FilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +84,8 @@
 		14B154DD289EDDCA00C62C05 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				14B154E7289EE0F200C62C05 /* FilmVC */,
+				14B154E6289EE0C100C62C05 /* UserVC */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -116,8 +136,39 @@
 		14B154E3289EDEC800C62C05 /* Film */ = {
 			isa = PBXGroup;
 			children = (
+				14B154EE289EFAF700C62C05 /* Film.swift */,
 			);
 			path = Film;
+			sourceTree = "<group>";
+		};
+		14B154E6289EE0C100C62C05 /* UserVC */ = {
+			isa = PBXGroup;
+			children = (
+				14B154E8289EE11400C62C05 /* UserIdentifaerVC.swift */,
+				14B154E9289EE11400C62C05 /* UserIdentifaerVC.xib */,
+				14B154EC289EE18B00C62C05 /* UserIdentifaerPresenter.swift */,
+			);
+			path = UserVC;
+			sourceTree = "<group>";
+		};
+		14B154E7289EE0F200C62C05 /* FilmVC */ = {
+			isa = PBXGroup;
+			children = (
+				14B154F628A007C400C62C05 /* FilmCell */,
+				14B154F0289EFBF800C62C05 /* FilmVC.swift */,
+				14B154F1289EFBF800C62C05 /* FilmVC.xib */,
+				14B154F4289EFC0B00C62C05 /* FilmPresenter.swift */,
+			);
+			path = FilmVC;
+			sourceTree = "<group>";
+		};
+		14B154F628A007C400C62C05 /* FilmCell */ = {
+			isa = PBXGroup;
+			children = (
+				14B154F728A007EF00C62C05 /* FilmCell.swift */,
+				14B154F828A007EF00C62C05 /* FilmCell.xib */,
+			);
+			path = FilmCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +229,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B154FA28A007EF00C62C05 /* FilmCell.xib in Resources */,
+				14B154F3289EFBF800C62C05 /* FilmVC.xib in Resources */,
 				14B154D6289EDDB500C62C05 /* LaunchScreen.storyboard in Resources */,
 				14B154D3289EDDB500C62C05 /* Assets.xcassets in Resources */,
+				14B154EB289EE11400C62C05 /* UserIdentifaerVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B154F928A007EF00C62C05 /* FilmCell.swift in Sources */,
+				14B154F2289EFBF800C62C05 /* FilmVC.swift in Sources */,
+				14B154EA289EE11400C62C05 /* UserIdentifaerVC.swift in Sources */,
+				14B154EF289EFAF700C62C05 /* Film.swift in Sources */,
 				14B154CA289EDDB500C62C05 /* AppDelegate.swift in Sources */,
+				14B154ED289EE18B00C62C05 /* UserIdentifaerPresenter.swift in Sources */,
 				14B154CC289EDDB500C62C05 /* SceneDelegate.swift in Sources */,
+				14B154F5289EFC0B00C62C05 /* FilmPresenter.swift in Sources */,
 				14B154E5289EDED400C62C05 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
