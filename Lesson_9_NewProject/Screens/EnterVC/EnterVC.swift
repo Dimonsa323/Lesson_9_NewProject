@@ -25,6 +25,14 @@ class EnterVC: UIViewController {
     
     private var presenter: EnterPresenterProtocol
     
+    private var loginText: String {
+        return nameTextField.text ?? ""
+    }
+    
+    private var passwordText: String {
+        return passwordTextField.text ?? ""
+    }
+    
     //MARK: - Init
     
     init(presenter: EnterPresenterProtocol) {
@@ -42,19 +50,12 @@ class EnterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.delegate = self
+        passwordTextField.delegate = self //Зачем делегат тут?
+        
         setupUI()
     }
 }
-
-//MARK: - Action
-extension EnterVC {
-    @IBAction func nextButton() {
-    }
-    
-    @IBAction func createButton() {
-    }
-}
-
 
 //MARK: - Private Extentions
 
@@ -66,10 +67,53 @@ private extension EnterVC {
     }
 }
 
-//MARK: - Alerts
-
-func showAlert() {
-    let alert = UIAlertController(title: "Ops", message: "Wrong format", preferredStyle: .alert)
-    let okAction = UIAlertAction(title: "Click", style: .default, handler: <#T##((UIAlertAction) -> Void)?##((UIAlertAction) -> Void)?##(UIAlertAction) -> Void#>)
+extension EnterVC {
+    func clearTextField() {
+        nameTextField.text = ""
+        passwordTextField.text = ""
+    }
+    
+    func checkValidTextFieldWhenFinishEditing(textField: UITextField) {
+        guard let inputText = textField.text, !inputText.isEmpty else {
+            showAlert(with: "Oh", and: "Text ield is empty", cloure: clearTextField)
+            return
+        }
+        
+        if let _ = Double(textField.text ?? "") {
+            showAlert(with: "No", and: "Wrong format", cloure: clearTextField)
+            return
+        }
 }
+    func checkTextField() -> Bool {
+        guard let loginText = nameTextField.text, !loginText.isEmpty, let passwordText = passwordTextField.text, !passwordText.isEmpty else {
+            showAlert(with: "Ou", and: "Information Is Wrong", cloure: clearTextField)
+            return false
+        }
+        return true 
+    }
+}
+
+extension EnterVC: UITextFieldDelegate {
+    
+}
+
+//MARK: - Action
+extension EnterVC {
+    @IBAction func nextButton() {
+        guard checkTextField(), let user = presenter.user, user.login == loginText, user.password == passwordText else {
+            showAlert(with: "Ops", and: "Юзера нету", cloure: clearTextField)
+            return
+        }
+        presenter.showSecondScreen(currentview: self)
+    }
+    
+    @IBAction func createButton() {
+        guard checkTextField() else {
+            return
+        }
+        presenter.createUser(login: loginText, password: passwordText)
+        presenter.showSecondScreen(currentview: self)           //Зачем мы вызвали тут ?
+    }
+}
+
 
