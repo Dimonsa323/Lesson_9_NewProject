@@ -20,7 +20,7 @@ protocol UserIdentifaerProtocol {
 
 class UserIdentifaerPresenter {
     
-    var user = User.userGetInfo()
+//    var user = User.userGetInfo()
     var film = Film.getFilm()
     private var view: UserProtocol!
     func set(view: UserProtocol) {
@@ -30,12 +30,12 @@ class UserIdentifaerPresenter {
 
 // MARK: - Private Extension
 
-extension UserIdentifaerPresenter: UserIdentifaerProtocol {
-    func showFilms(view: UIViewController) {
-        let presenter = FilmPresenter()
-        let vc = FilmVC(presenter: presenter)
-        
-        view.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-}
+//extension UserIdentifaerPresenter: UserIdentifaerProtocol {
+//    func showFilms(view: UIViewController) {
+//        let presenter = FilmPresenter()
+//        let vc = FilmVC(presenter: presenter)
+//
+//        view.navigationController?.pushViewController(vc, animated: true)
+//    }
+//
+//}
