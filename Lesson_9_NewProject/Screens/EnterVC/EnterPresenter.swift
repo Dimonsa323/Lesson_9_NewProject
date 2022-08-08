@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+    // MARK: - Protocol
+
 protocol EnterPresenterProtocol {
     var user: User? { get }
     
@@ -15,11 +17,17 @@ protocol EnterPresenterProtocol {
     func showSecondScreen(currentview: UIViewController)
 }
 
+    // MARK: - Class
+
 class EnterPresenter {
     var user: User?
     
+    // MARK: - Properties
+    
     private var closure: ((User) -> ())?
 }
+
+    // MARK: - Private Extension
 
 extension EnterPresenter: EnterPresenterProtocol {
     func showSecondScreen(currentview: UIViewController) {
@@ -33,3 +41,5 @@ extension EnterPresenter: EnterPresenterProtocol {
         user = User(login: login, password: password)
     }
 }
+
+

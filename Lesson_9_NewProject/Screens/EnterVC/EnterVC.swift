@@ -60,10 +60,10 @@ class EnterVC: UIViewController {
 //MARK: - Private Extentions
 
 private extension EnterVC {
-   func setupUI() {
-       nextScreenButton.layer.cornerRadius = 10
-       createUserButton.layer.cornerRadius = 10
-//       nextScreenButton.layer.borderColor = UIColor.red.cgColor    Что это ?
+    func setupUI() {
+        nextScreenButton.layer.cornerRadius = 10
+        createUserButton.layer.cornerRadius = 10
+        //       nextScreenButton.layer.borderColor = UIColor.red.cgColor    Что это ?
     }
 }
 
@@ -83,7 +83,7 @@ extension EnterVC {
             showAlert(with: "No", and: "Wrong format", cloure: clearTextField)
             return
         }
-}
+    }
     func checkTextField() -> Bool {
         guard let loginText = nameTextField.text, !loginText.isEmpty, let passwordText = passwordTextField.text, !passwordText.isEmpty else {
             showAlert(with: "Ou", and: "Information Is Wrong", cloure: clearTextField)

@@ -7,13 +7,13 @@
 
 import UIKit
 
-// MARK: - Protocol
+    // MARK: - Protocol
 
 protocol UserProtocol {
     
 }
 
-// MARK: - UserVc
+    // MARK: - UserVc
 
 class UserIdentifaerVC: UIViewController {
     
