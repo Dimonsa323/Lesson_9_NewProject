@@ -22,6 +22,13 @@
 		14B154F928A007EF00C62C05 /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154F728A007EF00C62C05 /* FilmCell.swift */; };
 		14B154FA28A007EF00C62C05 /* FilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B154F828A007EF00C62C05 /* FilmCell.xib */; };
 		14B154FD28A1391200C62C05 /* Extension+Aletr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154FC28A1391200C62C05 /* Extension+Aletr.swift */; };
+		C36199D2289EF4EC0085F236 /* EnterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36199D0289EF4EC0085F236 /* EnterVC.swift */; };
+		C36199D3289EF4EC0085F236 /* EnterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36199D1289EF4EC0085F236 /* EnterVC.xib */; };
+		C36199D5289EF5050085F236 /* EnterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36199D4289EF5050085F236 /* EnterPresenter.swift */; };
+		C36199D9289EF6390085F236 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36199D7289EF6390085F236 /* SecondVC.swift */; };
+		C36199DA289EF6390085F236 /* SecondVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C36199D8289EF6390085F236 /* SecondVC.xib */; };
+		C36199DC289EF65E0085F236 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36199DB289EF65E0085F236 /* SecondPresenter.swift */; };
+		C36199DF28A02C230085F236 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36199DE28A02C230085F236 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,13 @@
 		14B154F728A007EF00C62C05 /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
 		14B154F828A007EF00C62C05 /* FilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCell.xib; sourceTree = "<group>"; };
 		14B154FC28A1391200C62C05 /* Extension+Aletr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Aletr.swift"; sourceTree = "<group>"; };
+		C36199D0289EF4EC0085F236 /* EnterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterVC.swift; sourceTree = "<group>"; };
+		C36199D1289EF4EC0085F236 /* EnterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterVC.xib; sourceTree = "<group>"; };
+		C36199D4289EF5050085F236 /* EnterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPresenter.swift; sourceTree = "<group>"; };
+		C36199D7289EF6390085F236 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		C36199D8289EF6390085F236 /* SecondVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondVC.xib; sourceTree = "<group>"; };
+		C36199DB289EF65E0085F236 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		C36199DE28A02C230085F236 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				14B154FB28A138F700C62C05 /* Extension */,
+				C36199DD28A02C000085F236 /* Extention+Alert */,
 				14B154E1289EDE5500C62C05 /* Model */,
 				14B154E0289EDE4300C62C05 /* Source */,
 				14B154DF289EDE1B00C62C05 /* SupportFiles */,
@@ -89,6 +104,8 @@
 			children = (
 				14B154E7289EE0F200C62C05 /* FilmVC */,
 				14B154E6289EE0C100C62C05 /* UserVC */,
+				C36199D6289EF51E0085F236 /* SecondVC */,
+				C36199CF289EF4B60085F236 /* EnterVC */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -180,6 +197,34 @@
 				14B154FC28A1391200C62C05 /* Extension+Aletr.swift */,
 			);
 			path = Extension;
+            sourceTree = "<group>";
+        };
+		C36199CF289EF4B60085F236 /* EnterVC */ = {
+			isa = PBXGroup;
+			children = (
+				C36199D0289EF4EC0085F236 /* EnterVC.swift */,
+				C36199D1289EF4EC0085F236 /* EnterVC.xib */,
+				C36199D4289EF5050085F236 /* EnterPresenter.swift */,
+			);
+			path = EnterVC;
+			sourceTree = "<group>";
+		};
+		C36199D6289EF51E0085F236 /* SecondVC */ = {
+			isa = PBXGroup;
+			children = (
+				C36199D7289EF6390085F236 /* SecondVC.swift */,
+				C36199D8289EF6390085F236 /* SecondVC.xib */,
+				C36199DB289EF65E0085F236 /* SecondPresenter.swift */,
+			);
+			path = SecondVC;
+			sourceTree = "<group>";
+		};
+		C36199DD28A02C000085F236 /* Extention+Alert */ = {
+			isa = PBXGroup;
+			children = (
+				C36199DE28A02C230085F236 /* Alert.swift */,
+			);
+			path = "Extention+Alert";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +288,8 @@
 				14B154FA28A007EF00C62C05 /* FilmCell.xib in Resources */,
 				14B154F3289EFBF800C62C05 /* FilmVC.xib in Resources */,
 				14B154D6289EDDB500C62C05 /* LaunchScreen.storyboard in Resources */,
+				C36199D3289EF4EC0085F236 /* EnterVC.xib in Resources */,
+				C36199DA289EF6390085F236 /* SecondVC.xib in Resources */,
 				14B154D3289EDDB500C62C05 /* Assets.xcassets in Resources */,
 				14B154EB289EE11400C62C05 /* UserIdentifaerVC.xib in Resources */,
 			);
@@ -265,6 +312,11 @@
 				14B154CC289EDDB500C62C05 /* SceneDelegate.swift in Sources */,
 				14B154F5289EFC0B00C62C05 /* FilmPresenter.swift in Sources */,
 				14B154E5289EDED400C62C05 /* User.swift in Sources */,
+				C36199DC289EF65E0085F236 /* SecondPresenter.swift in Sources */,
+				C36199D2289EF4EC0085F236 /* EnterVC.swift in Sources */,
+				C36199D9289EF6390085F236 /* SecondVC.swift in Sources */,
+				C36199DF28A02C230085F236 /* Alert.swift in Sources */,
+				C36199D5289EF5050085F236 /* EnterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
