@@ -21,6 +21,7 @@
 		14B154F5289EFC0B00C62C05 /* FilmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154F4289EFC0B00C62C05 /* FilmPresenter.swift */; };
 		14B154F928A007EF00C62C05 /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154F728A007EF00C62C05 /* FilmCell.swift */; };
 		14B154FA28A007EF00C62C05 /* FilmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B154F828A007EF00C62C05 /* FilmCell.xib */; };
+		14B154FD28A1391200C62C05 /* Extension+Aletr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B154FC28A1391200C62C05 /* Extension+Aletr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		14B154F4289EFC0B00C62C05 /* FilmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPresenter.swift; sourceTree = "<group>"; };
 		14B154F728A007EF00C62C05 /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
 		14B154F828A007EF00C62C05 /* FilmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilmCell.xib; sourceTree = "<group>"; };
+		14B154FC28A1391200C62C05 /* Extension+Aletr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Aletr.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		14B154C8289EDDB500C62C05 /* Lesson_9_NewProject */ = {
 			isa = PBXGroup;
 			children = (
+				14B154FB28A138F700C62C05 /* Extension */,
 				14B154E1289EDE5500C62C05 /* Model */,
 				14B154E0289EDE4300C62C05 /* Source */,
 				14B154DF289EDE1B00C62C05 /* SupportFiles */,
@@ -171,6 +174,14 @@
 			path = FilmCell;
 			sourceTree = "<group>";
 		};
+		14B154FB28A138F700C62C05 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14B154FC28A1391200C62C05 /* Extension+Aletr.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +261,7 @@
 				14B154EF289EFAF700C62C05 /* Film.swift in Sources */,
 				14B154CA289EDDB500C62C05 /* AppDelegate.swift in Sources */,
 				14B154ED289EE18B00C62C05 /* UserIdentifaerPresenter.swift in Sources */,
+				14B154FD28A1391200C62C05 /* Extension+Aletr.swift in Sources */,
 				14B154CC289EDDB500C62C05 /* SceneDelegate.swift in Sources */,
 				14B154F5289EFC0B00C62C05 /* FilmPresenter.swift in Sources */,
 				14B154E5289EDED400C62C05 /* User.swift in Sources */,

@@ -7,11 +7,29 @@
 
 import UIKit
 
+protocol UserProtocol {
+    
+}
+
 class UserIdentifaerVC: UIViewController {
 
+    // MARK: - IBOutlets
+    
+    @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     // MARK: - Properties
     
     private let presenter: UserIdentifaerProtocol
+    
+    private var loginText: String {
+        return loginTextField.text ?? ""
+    }
+
+    private var passwordText: String {
+        return passwordTextField.text ?? ""
+    }
     
     // MARK: - Init
     
@@ -26,7 +44,27 @@ class UserIdentifaerVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
         
     }
+    
+    // MARK: - IBAction
+    
+    @IBAction func nextScreenButton() {
+        presenter.showFilms(view: self)
+    }
+    
+}
+
+// MARK: - Private Extension 
+
+private extension UserIdentifaerVC {
+    func setupUI() {
+    
+    }
+  
+}
+
+extension UserIdentifaerVC: UserProtocol {
+   
 }

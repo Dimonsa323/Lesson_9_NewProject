@@ -14,7 +14,7 @@ struct Film {
 }
 
 extension Film {
-    func getFilm() -> [Film] {
+  static func getFilm() -> [Film] {
         return [Film(nameFilm: "Темный Рыцарь", imageFilm: "Темный рыцарь"),
                 Film(nameFilm: "Темный Рыцарь 2", imageFilm:  "Темный Рыцарь_2"),
                 Film(nameFilm: "Темный Рыцарь 3", imageFilm: "Темный рыцарь_3"),

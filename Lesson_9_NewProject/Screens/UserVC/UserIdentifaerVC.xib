@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserIdentifaerVC" customModule="Lesson_9_NewProject" customModuleProvider="target">
             <connections>
+                <outlet property="loginTextField" destination="dpu-6f-EGZ" id="Eh6-AH-jqS"/>
+                <outlet property="passwordTextField" destination="sCy-DB-ZLI" id="3qo-rk-URe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,17 +24,20 @@
                     <rect key="frame" x="295" y="69" width="103" height="31"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Next Screen"/>
+                    <connections>
+                        <action selector="nextScreenButton" destination="-1" eventType="touchUpInside" id="EMU-32-6x5"/>
+                    </connections>
                 </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0yY-vL-ABt">
-                    <rect key="frame" x="24" y="214" width="366" height="87"/>
+                    <rect key="frame" x="24" y="214" width="366" height="85.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpu-6f-EGZ">
-                            <rect key="frame" x="0.0" y="0.0" width="366" height="28.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="27"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCy-DB-ZLI">
-                            <rect key="frame" x="0.0" y="58.5" width="366" height="28.5"/>
+                            <rect key="frame" x="0.0" y="57" width="366" height="28.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>

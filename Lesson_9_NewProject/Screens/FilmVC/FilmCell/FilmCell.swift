@@ -17,5 +17,9 @@ class FilmCell: UITableViewCell {
        
     }
 
-    
+    func config(with model: Film) {
+        nameFilmLabel.text = model.nameFilm
+        filmImageView.image = UIImage(named: model.imageFilm)
+    }
 }
+ 
