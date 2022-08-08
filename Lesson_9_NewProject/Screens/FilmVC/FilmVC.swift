@@ -7,11 +7,19 @@
 
 import UIKit
 
-class FilmVC: UIViewController {
+// MARK: - FilmVC
 
+class FilmVC: UIViewController {
+    
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var filmsTableView: UITableView!
     
+    // MARK: - Properties
+    
     private let presenter: FilmPresenterProtocol
+    
+    // MARK: - Init
     
     init(presenter:FilmPresenterProtocol) {
         self.presenter = presenter
@@ -22,11 +30,12 @@ class FilmVC: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-       
+        
     }
 }
 

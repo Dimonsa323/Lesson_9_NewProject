@@ -7,19 +7,25 @@
 
 import UIKit
 
+// MARK: - FilmCell
+
 class FilmCell: UITableViewCell {
+    
+    // MARK: - IBOutlets
     
     @IBOutlet weak var nameFilmLabel: UILabel!
     @IBOutlet weak var filmImageView: UIImageView!
     
+    // MARK: - Life Cycle
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+        
     }
-
+    
     func config(with model: Film) {
         nameFilmLabel.text = model.nameFilm
         filmImageView.image = UIImage(named: model.imageFilm)
     }
 }
- 
+

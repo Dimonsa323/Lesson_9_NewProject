@@ -43,6 +43,15 @@
                         </textField>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69C-Uj-NdI">
+                    <rect key="frame" x="165" y="339" width="84" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Welcome"/>
+                    <connections>
+                        <action selector="welcomeButton" destination="-1" eventType="touchUpInside" id="ar1-Js-nR0"/>
+                        <action selector="welcomeButton:" destination="-1" eventType="touchUpInside" id="8yl-Hi-UQU"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -51,6 +60,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uQW-xp-pr2" secondAttribute="trailing" constant="16" id="QmF-9O-vcX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0yY-vL-ABt" secondAttribute="trailing" constant="24" id="WNx-2l-EUu"/>
                 <constraint firstItem="0yY-vL-ABt" firstAttribute="top" secondItem="uQW-xp-pr2" secondAttribute="bottom" constant="114" id="aiF-Ji-DmA"/>
+                <constraint firstItem="69C-Uj-NdI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cw2-cV-sdn"/>
+                <constraint firstItem="69C-Uj-NdI" firstAttribute="top" secondItem="0yY-vL-ABt" secondAttribute="bottom" constant="39.5" id="uQA-kc-Asz"/>
                 <constraint firstItem="0yY-vL-ABt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="xOl-Vc-1dH"/>
             </constraints>
             <point key="canvasLocation" x="139" y="140"/>

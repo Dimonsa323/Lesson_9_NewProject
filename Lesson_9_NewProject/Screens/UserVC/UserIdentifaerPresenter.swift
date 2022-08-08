@@ -8,12 +8,15 @@
 import Foundation
 import UIKit
 
+// MARK: Protocol
 
 protocol UserIdentifaerProtocol {
     var user: User { get }
     func showFilms(view: UIViewController)
     
 }
+
+// MARK: Presenter
 
 class UserIdentifaerPresenter {
     
@@ -25,6 +28,8 @@ class UserIdentifaerPresenter {
     }
 }
 
+// MARK: - Private Extension
+
 extension UserIdentifaerPresenter: UserIdentifaerProtocol {
     func showFilms(view: UIViewController) {
         let presenter = FilmPresenter()
@@ -33,5 +38,4 @@ extension UserIdentifaerPresenter: UserIdentifaerProtocol {
         view.navigationController?.pushViewController(vc, animated: true)
     }
     
-   
 }

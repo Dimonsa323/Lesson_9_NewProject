@@ -6,7 +6,9 @@
 //
 
 import Foundation
+
 // MARK: - Protocol
+
 protocol FilmPresenterProtocol {
     var films: [Film] { get }
 }
@@ -25,7 +27,7 @@ class FilmPresenter {
 // MARK: - Private Extension
 
 extension FilmPresenter: FilmPresenterProtocol {
-
+    
 }
 
 
