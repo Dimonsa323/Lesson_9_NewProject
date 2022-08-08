@@ -13,8 +13,8 @@ struct User {
     let password: String
 }
 
-extension User {
-    static func userGetInfo() -> User {
-        return User(login: "Dima", password: "12345")
-    }
-}
+//extension User {
+//    static func userGetInfo() -> User {
+//        return User(login: "Dima", password: "12345")
+//    }
+//}
